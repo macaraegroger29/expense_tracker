@@ -5,6 +5,7 @@ from .forms import ExpenseForm
 
 def expense_list(request):
     expenses = Expense.objects.all()
+    #ilovepauline<3
     return render(request, 'tracker/expense_list.html', {'expenses': expenses})
 
 
